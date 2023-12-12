@@ -1,5 +1,6 @@
 # testing from laptop
 # matplotlib inline
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import norm
@@ -59,6 +60,7 @@ plt.plot(
 plt.legend()
 plt.ylim(-1, 1)
 plt.xlabel("time [s]")
+plt.show()
 
 # Plot the spiking output of the ensemble
 plt.figure(figsize=(10, 8))
