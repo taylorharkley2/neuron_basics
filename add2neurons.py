@@ -76,7 +76,3 @@ plt.subplot(222)
 rasterplot(sim.trange(), sim.data[spikesB])
 plt.ylabel("Neuron")
 plt.xlim(0, 1)
-
-#import nengo_gui
-
-#nengo_gui.GUI(__file__).start()
