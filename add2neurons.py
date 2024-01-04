@@ -13,7 +13,9 @@ from nengo.dists import Uniform
 model = nengo.Network(label="Addition")
 with model:
     # Create 3 ensembles each containing 100 leaky integrate-and-fire neurons
-    A = nengo.Ensemble(100, dimensions=1, encoders=Uniform(-1, -1)) #make this one negative
+    A = nengo.Ensemble(
+        100, dimensions=1, encoders=Uniform(-1, -1)
+    )  # make this one negative
     B = nengo.Ensemble(100, dimensions=1)
     C = nengo.Ensemble(100, dimensions=1)
 
@@ -76,4 +78,5 @@ plt.ylabel("Neuron")
 plt.xlim(0, 1)
 
 import nengo_gui
+
 nengo_gui.GUI(__file__).start()
